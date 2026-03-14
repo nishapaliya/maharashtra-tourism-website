@@ -1,0 +1,28 @@
+div {
+  background:orange;
+  padding: 30px;
+  text-align: center;
+}
+#d1 {
+  color: white;
+  margin: 20px;
+  font-weight: bold;
+}
+#d2
+{
+  background:orange;
+  text-decoration: underline;
+
+}
+.card
+{
+	background:white;
+  	text-decoration: underline;
+
+}
+#d3
+{
+     background:white;
+
+
+}

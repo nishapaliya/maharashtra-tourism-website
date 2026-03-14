@@ -1,0 +1,158 @@
+<html>
+<head>
+  <title>Book My Trip | Maharashtra Tourism</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      padding: 20px;
+    }
+
+    h1 {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      border: none;
+      margin: 20px auto;
+      padding: 30px;
+      text-align: center;
+      font-size: 40px;
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 80%;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    li {
+      background-color: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    li:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    table {
+      margin: 30px auto;
+      background-color: #ffffffcc;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 80%;
+    }
+
+    td {
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    input[type="text"], select {
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      padding: 10px 20px;
+      margin: 10px 5px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #019875;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tour Packages</h1>
+
+  <ul>
+    <li>Weekend in Lonavala – ₹6,000</li>
+    <li>Heritage Tour of Matheran – ₹8,000</li>
+    <li>5 Star Hotels in Maharashtra - ₹7,000</li>
+    <li>Resort - ₹5,000</li>
+    <li>Weekend in Khandala - ₹7,000 </li>
+    <li>Weekend in Mumbai - ₹15,000</li>
+    <li>Museum Tour - ₹2,000</li>
+    <li>Tour of Temples -  ₹10,000</li>
+    <li>And Many more....</li>
+
+
+  </ul>
+<h2>Includes Travelling Expenses!!!</h2>
+  <form>
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td><input type="text" id="nm" placeholder="First Name"></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input type="text" placeholder="Last Name"></td>
+      </tr>
+      <tr>
+        <td>Places</td>
+        <td>
+          <select>
+            <option>Elephanta Caves</option>
+            <option>Lonavala</option>
+            <option>Ajanta Caves</option>
+            <option>Matheran</option>
+            <option>Gateway of India</option>
+            <option>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</option>
+            <option>Raigad Fort</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>E-Mail</td>
+        <td><input type="text" placeholder="Enter E-Mail ID"></td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+        <td><input type="text" placeholder="+91"></td>
+      </tr>
+      <tr>
+        <td>Additional Information</td>
+        <td><input type="text" placeholder="Add Info"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" onClick="submitForm()" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <script>
+    function submitForm() {
+      var name = document.getElementById("nm").value;
+      alert(name + " - Form Successfully Submitted!");
+    }
+  </script>
+
+</body>
+</html>
