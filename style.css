@@ -26,3 +26,51 @@ div {
 
 
 }
+
+
+
+
+
+.navbar{
+    background: linear-gradient(to right,#e9a24d,#e36c3d);
+    padding:15px 0;
+}
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;   /* centers the menu */
+    gap:60px;                 /* space between tabs */
+    margin:0;
+    padding:0;
+}
+
+.nav-menu li a{
+    text-decoration:none;
+    font-size:20px;
+    color:black;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-menu li a:hover{
+    color:white;
+}
+
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+
+.nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 0;
+}
