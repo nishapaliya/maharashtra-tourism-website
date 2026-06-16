@@ -1,12 +1,15 @@
+
 <html>
 <head>
   <title>Book My Trip | Maharashtra Tourism</title>
+  <link rel="stylesheet" href="style.css">
+
   <style>
     body {
-      margin: 0;
+      margin: 8px;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-      padding: 20px;
+      
     }
 
     h1 {
@@ -22,27 +25,26 @@
       width: 80%;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px auto;
-      width: 80%;
-    }
+    .package-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 80%;
+}
 
-    li {
-      background-color: #fff;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 18px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+    .package-list li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    li:hover {
-      transform: scale(1.03);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
+.package-list li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
     table {
       margin: 30px auto;
@@ -85,9 +87,21 @@
 </head>
 <body>
 
+<nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="book my trip.html">Book Trip</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+
   <h1>Tour Packages</h1>
 
-  <ul>
+  <ul class="package-list">
     <li>Weekend in Lonavala – ₹6,000</li>
     <li>Heritage Tour of Matheran – ₹8,000</li>
     <li>5 Star Hotels in Maharashtra - ₹7,000</li>
@@ -101,6 +115,20 @@
 
   </ul>
 <h2>Includes Travelling Expenses!!!</h2>
+
+
+<h2 style="text-align:center; font-family:Georgia ; color:red
+; margin-top:30px;"><b><i>
+    Book Your Dream Trip
+</b></i></h2>
+
+<p style="text-align:center; font-size:18px;"><b>
+    Fill in the details below and our team will help you plan your perfect Maharashtra tour.
+</b></p>
+
+
+
+
   <form>
     <table>
       <tr>
